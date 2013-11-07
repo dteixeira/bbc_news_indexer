@@ -1,9 +1,7 @@
-#encoding: UTF-8
-
 # External requires.
 require 'nokogiri'
 
-module NewsFetch
+module NewsFetcher
 
   class News
     attr_accessor :title, :body, :url, :description, :id, :topic,

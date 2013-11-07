@@ -1,24 +1,26 @@
 # BbcNewsIndexer
 
-TODO: Write a gem description
+This project makes it possible to poll news from several BBC News sites. This information can
+also be automatically indexed in a Solr server.
+
+The project was written for Ruby 2.0.0, so no backwards compatibility is assured (though it should
+work in any version from 1.9.3).
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone this repository to your machine and go to its root.
 
-    gem 'bbc_news_indexer'
+Use bundler to install any gem dependencies.
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install bbc_news_indexer
+    bundle install
 
 ## Usage
 
-TODO: Write usage instructions here
+For the "periodic poll and index" behaviour, just add the file 'ext\_lib/fetch.sh' to your
+system's startup scripts.
+
+Any other behaviour, including indexing all past data and deleting the index, can be
+achieved with any ruby interpreter or custom script (pry is added in the Gemfile already).
 
 ## Contributing
 
