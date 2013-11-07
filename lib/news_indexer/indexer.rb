@@ -52,6 +52,11 @@ module NewsIndexer
             args[:topics] = [topic.xpath('./@id').text]
             args.delete :text
 
+            # News with no title, description or body are discarded.
+            next unless args[:title] != nil && !args[:title].empty?
+            next unless args[:description] != nil && !args[:description].empty?
+            next unless args[:body] != nil && !args[:body].empty?
+
             # Check if document really needs to be indexed:
             # if the new document was already indexed and
             # doesn't bring any new information, it isn't
