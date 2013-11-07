@@ -1,5 +1,6 @@
 #!/bin/bash
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+rvm use 2.0.0@dapi
 sleep 5m
 while :
 do
