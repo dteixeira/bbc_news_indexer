@@ -163,7 +163,7 @@
    <field name="date" type="date" indexed="true" stored="true" required="true"/>
 
    <!-- Text collector field -->
-   <field name="text" type="text_general" indexed="true" stored="false" multiValued="true"/>
+   <field name="text" type="text_en" indexed="true" stored="false" multiValued="true"/>
 
  </fields>
 
@@ -179,6 +179,6 @@
  <defaultSearchField>text</defaultSearchField>
 
  <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
- <solrQueryParser defaultOperator="OR"/>
+ <solrQueryParser defaultOperator="AND"/>
 
 </schema>
