@@ -151,7 +151,7 @@
    -->
 
   <!-- DAPI required document fields -->
-   <field name="id" type="string" indexed="true" stored="false" required="true"/>
+   <field name="id" type="string" indexed="true" stored="true" required="true"/>
    <field name="video" type="boolean" indexed="true" stored="true" required="true" default="false"/>
    <field name="audio" type="boolean" indexed="true" stored="true" required="true" default="false"/>
    <field name="title" type="text_en" indexed="true" stored="true" required="true"/>
